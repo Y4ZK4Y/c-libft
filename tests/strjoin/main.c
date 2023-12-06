@@ -1,11 +1,12 @@
+#include "../../include/libft.h"
 #include <stdio.h>
 int main()
 {
-    // char const *str1 = "hello";
-    // char const *str2 = "there";
-    // char *rez;
-    // rez = ft_strjoin(str1, str2);
-    // printf("%s", rez);
+    char const *str1 = "hello";
+    char const *str2 = "there";
+    char *rez;
+    rez = ft_strjoin(str1, str2);
+    printf("%s", rez);
 
     // Expected result: "HelloWorld"
     char *result = ft_strjoin("Hello", "World");

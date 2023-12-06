@@ -1,3 +1,4 @@
+#include "../../include/libft.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -63,7 +64,7 @@ int main() {
         printf("Edge Case: Allocation of 0 bytes failed.\n");
     }
 
-    // Don't forget to free the allocated memory
+    // free the allocated memory
     free(arr1);
     free(arr2);
     free(str1);

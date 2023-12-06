@@ -1,3 +1,4 @@
+#include "../../include/libft.h"
 
 // some function for testing purposes
 char modify_char(unsigned int index, char c) {

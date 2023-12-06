@@ -1,4 +1,4 @@
-
+#include "../../include/libft.h"
 #include <stdio.h>
 #include <string.h>
 int main()
@@ -45,8 +45,6 @@ int main()
 	strlen(haystack_with_null));
     //char *result99 = ft_strnstr(haystack_with_null, needle1,\
 	 strlen(haystack_with_null));
-
-
 
     printf("normal test - original: %s\n",result1);
     printf("normal test - Custom: %s\n\n",result11);

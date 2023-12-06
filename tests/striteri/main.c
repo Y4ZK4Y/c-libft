@@ -1,3 +1,4 @@
+#include "../../include/libft.h"
 #include <stdio.h>
 
 // Sample function to use with ft_striteri

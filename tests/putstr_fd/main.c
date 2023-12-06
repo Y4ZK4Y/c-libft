@@ -1,3 +1,4 @@
+#include "../../include/libft.h"
 int main()
 {
     char *str = "hello";

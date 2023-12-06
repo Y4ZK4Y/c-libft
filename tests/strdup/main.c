@@ -1,4 +1,4 @@
-
+#include "../../include/libft.h"
 #include <stdio.h>
 #include <string.h>
 
@@ -49,7 +49,7 @@ int main() {
         printf("Test Case 3: Duplicating a NULL string failed.\n");
     }
 
-    // Don't forget to free the allocated memory
+    // free the allocated memory
     free(dup1);
     free(dup2);
     free(empty_dup1);
