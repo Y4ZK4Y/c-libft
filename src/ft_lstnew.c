@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_lstnew.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ykarimi <marvin@42.fr>                       +#+                     */
+/*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/03 12:26:11 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/11/03 19:51:11 by ykarimi       ########   odam.nl         */
+/*   Updated: 2023/12/05 16:09:14 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,13 +24,14 @@
 ** ’content’ is initialized with the value of the parameter ’content’. 
 ** The variable ’next’ is initialized to NULL.
 */
+
 #include "libft.h"
 
 t_list	*ft_lstnew(void *content)
 {
 	t_list	*new_node;
 
-	new_node = malloc(sizeof(t_list));
+	new_node = (t_list *)malloc(1 * sizeof(t_list));
 	if (!new_node)
 		return (NULL);
 	new_node->content = content;

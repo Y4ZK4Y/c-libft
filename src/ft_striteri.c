@@ -3,7 +3,7 @@
 /*                                                        ::::::::            */
 /*   ft_striteri.c                                      :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ykarimi <marvin@42.fr>                       +#+                     */
+/*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:17:27 by ykarimi       #+#    #+#                 */
 /*   Updated: 2023/11/03 19:53:30 by ykarimi       ########   odam.nl         */
@@ -27,6 +27,7 @@
 ** as first argument. Easch character is passed by address to ’f’ to 
 ** be modified if necessary.
 */
+
 #include "libft.h"
 
 void	ft_striteri(char *s, void (*f)(unsigned int, char*))
@@ -42,24 +43,3 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 		i++;
 	}
 }
-/*
-#include <stdio.h>
-
-// Sample function to use with ft_striteri
-void modify_characters(unsigned int index, char *c) {
-    // Modify the character (e.g., increment its ASCII value by the index)
-    *c = *c + index;
-}
-
-int main() {
-    char str[] = "Hello, World!";
-
-    printf("Original string: %s\n", str);
-
-    ft_striteri(str, modify_characters);
-
-    printf("Modified string: %s\n", str);
-
-    return 0;
-}
-*/

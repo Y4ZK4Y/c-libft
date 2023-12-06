@@ -3,7 +3,7 @@
 /*                                                        ::::::::            */
 /*   ft_lstclear.c                                      :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ykarimi <marvin@42.fr>                       +#+                     */
+/*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/03 12:27:57 by ykarimi       #+#    #+#                 */
 /*   Updated: 2023/11/03 19:54:43 by ykarimi       ########   odam.nl         */
@@ -25,6 +25,7 @@
 ** using the function ’del’ and free(3).
 ** Finally, the pointer to the list must be set to NULL.
 */
+
 #include "libft.h"
 
 void	ft_lstclear(t_list **lst, void (*del)(void *))

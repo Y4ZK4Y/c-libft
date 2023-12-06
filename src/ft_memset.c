@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_memset.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ykarimi <marvin@42.fr>                       +#+                     */
+/*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:36:36 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/11/03 19:50:35 by ykarimi       ########   odam.nl         */
+/*   Updated: 2023/12/05 12:46:06 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,8 +22,7 @@
 void	*ft_memset(void *buffer, int value, size_t len)
 {
 	unsigned char	*buffer_ptr;
-
-	buffer_ptr = (unsigned char *) buffer;
+	buffer_ptr = buffer;
 	while (len > 0)
 	{
 		*buffer_ptr = (unsigned char)value;
@@ -32,30 +31,3 @@ void	*ft_memset(void *buffer, int value, size_t len)
 	}
 	return (buffer);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    char str1[20];
-    char str2[20];
-
-    // Using standard memset to fill the first 10 bytes with 'A'
-    memset(str1, 'A', 10);
-    printf("Standard memset (partial): %s\n", str1);
-
-    // Using ft_memset to fill the first 10 bytes with 'B'
-    ft_memset(str2, 'B', 10);
-    printf("ft_memset (partial): %s\n", str2);
-
-    // Using standard memset to fill the entire array with 'C'
-    memset(str1, 'C', sizeof(str1));
-    printf("Standard memset (full): %s\n", str1);
-
-    // Using ft_memset to fill the entire array with 'D'
-    ft_memset(str2, 'D', sizeof(str2));
-    printf("ft_memset (full): %s\n", str2);
-
-    return 0;
-}
-*/

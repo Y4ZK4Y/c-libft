@@ -3,7 +3,7 @@
 /*                                                        ::::::::            */
 /*   ft_isdigit.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ykarimi <marvin@42.fr>                       +#+                     */
+/*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/19 16:14:16 by ykarimi       #+#    #+#                 */
 /*   Updated: 2023/11/03 19:51:52 by ykarimi       ########   odam.nl         */
@@ -29,33 +29,3 @@ int	ft_isdigit(int c)
 {
 	return (c >= '0' && c <= '9');
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main() {
-    const char *test_string = "12345 ABC";
-    printf("Original String: %s\n", test_string);
-
-    printf("Using standard isdigit:\n");
-    for (int i = 0; test_string[i] != '\0'; i++) {
-        if (isdigit(test_string[i])) {
-            putchar('1');
-        } else {
-            putchar('0');
-        }
-    }
-    putchar('\n');
-
-    printf("Using ft_isdigit:\n");
-    for (int i = 0; test_string[i] != '\0'; i++) {
-        if (ft_isdigit(test_string[i])) {
-            putchar('1');
-        } else {
-            putchar('0');
-        }
-    }
-    putchar('\n');
-
-    return 0;
-}
-*/

@@ -3,7 +3,7 @@
 /*                                                        ::::::::            */
 /*   ft_isprint.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ykarimi <marvin@42.fr>                       +#+                     */
+/*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/19 16:15:05 by ykarimi       #+#    #+#                 */
 /*   Updated: 2023/11/03 19:51:47 by ykarimi       ########   odam.nl         */
@@ -26,33 +26,3 @@ int	ft_isprint(int c)
 {
 	return (c >= 32 && c <= 126);
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-int main() {
-    const char *test_string = "Hello World!\n";
-    printf("Original String: %s", test_string);
-
-    printf("Using standard isprint:\n");
-    for (int i = 0; test_string[i] != '\0'; i++) {
-        if (isprint(test_string[i])) {
-            putchar('1');
-        } else {
-            putchar('0');
-        }
-    }
-    putchar('\n');
-
-    printf("Using ft_isprint:\n");
-    for (int i = 0; test_string[i] != '\0'; i++) {
-        if (ft_isprint(test_string[i])) {
-            putchar('1');
-        } else {
-            putchar('0');
-        }
-    }
-    putchar('\n');
-
-    return 0;
-}
-*/

@@ -3,7 +3,7 @@
 /*                                                        ::::::::            */
 /*   ft_lstsize.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ykarimi <marvin@42.fr>                       +#+                     */
+/*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/03 12:27:06 by ykarimi       #+#    #+#                 */
 /*   Updated: 2023/11/03 19:41:08 by ykarimi       ########   odam.nl         */

@@ -3,7 +3,7 @@
 /*                                                        ::::::::            */
 /*   ft_split.c                                         :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ykarimi <marvin@42.fr>                       +#+                     */
+/*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:23:19 by ykarimi       #+#    #+#                 */
 /*   Updated: 2023/11/03 19:50:09 by ykarimi       ########   odam.nl         */
@@ -125,27 +125,3 @@ char	**ft_split(char const *s, char c)
 		return (NULL);
 	return (fill_substrings(s, ptr, c));
 }
-/*
-#include <stdio.h>
-
-int main(void)
-{
-    const char *str = "Hello,world,this,is,a,test";
-    char **result = ft_split(str, ',');
-
-    if (!result)
-    {
-        printf("Splitting failed\n");
-        return 1;
-    }
-
-    for (size_t i = 0; result[i] != NULL; i++)
-    {
-        printf("substring %lu: %s\n", i, result[i]);
-        free(result[i]);
-    }
-
-    free(result);
-    return 0;
-}
-*/

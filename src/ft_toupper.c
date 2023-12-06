@@ -3,7 +3,7 @@
 /*                                                        ::::::::            */
 /*   ft_toupper.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ykarimi <marvin@42.fr>                       +#+                     */
+/*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 10:47:00 by ykarimi       #+#    #+#                 */
 /*   Updated: 2023/11/03 19:48:46 by ykarimi       ########   odam.nl         */
@@ -22,30 +22,7 @@
 
 int	ft_toupper(int c)
 {
-	if (c >= 'a' && c <= 'z')
+	if (ft_islower(c))
 		return (c - 32);
 	return (c);
 }
-/*
-#include <stdio.h>
-#include <ctype.h>
-
-int main() {
-    const char *test_string = "Hello World";
-    printf("Original String: %s\n", test_string);
-
-    printf("Using standard toupper:\n");
-    for (int i = 0; test_string[i] != '\0'; i++) {
-        putchar(toupper(test_string[i]));
-    }
-    putchar('\n');
-
-    printf("Using ft_toupper:\n");
-    for (int i = 0; test_string[i] != '\0'; i++) {
-        putchar(ft_toupper(test_string[i]));
-    }
-    putchar('\n');
-
-    return 0;
-}
-*/

@@ -3,7 +3,7 @@
 /*                                                        ::::::::            */
 /*   ft_memcmp.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ykarimi <marvin@42.fr>                       +#+                     */
+/*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:41:58 by ykarimi       #+#    #+#                 */
 /*   Updated: 2023/11/03 19:50:53 by ykarimi       ########   odam.nl         */
@@ -24,53 +24,23 @@
 ** that differ in s1 and s2.
 ** If n is zero, the return value is zero.
 */
+
 #include "libft.h"
 
 int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
-	unsigned char	*s1p;
-	unsigned char	*s2p;
-	size_t			i;
+	const unsigned char	*s1p;
+	const unsigned char	*s2p;
+	s1p = (const unsigned char *)s1;
+	s2p = (const unsigned char *)s2;
 
-	if (!s1 && !s2)
-		return (0);
-	s1p = (unsigned char *)s1;
-	s2p = (unsigned char *)s2;
-	i = 0;
-	while (i < n)
+	while (n > 0)
 	{
-		if (s1p[i] != s2p[i])
-			return (s1p[i] - s2p[i]);
-		i++;
+		if (*s1p != *s2p)
+			return (*s1p - *s2p);
+		s1p++;
+		s2p++;
+		n--;
 	}
 	return (0);
 }
-/*
-#include <stdio.h>
-#include <string.h>
-
-int main() {
-    // Test cases
-    const unsigned char test1[] = "Hello";
-    const unsigned char test2[] = "Hello";
-    const unsigned char test3[] = "Helloworld";
-    const unsigned char test4[] = "Hell";
-    const unsigned char test5[] = "Helli";
-
-    // Testing custom ft_memcmp
-    printf("ft_memcmp Results:\n");
-    printf("Test 1: %d\n", ft_memcmp(test1, test2, 5));
-    printf("Test 2: %d\n", ft_memcmp(test1, test3, 5));
-    printf("Test 3: %d\n", ft_memcmp(test1, test4, 4));
-    printf("Test 4: %d\n", ft_memcmp(test4, test5, 4));
-
-    // Testing standard memcmp
-    printf("\nStandard memcmp Results:\n");
-    printf("Test 1: %d\n", memcmp(test1, test2, 5));
-    printf("Test 2: %d\n", memcmp(test1, test3, 5));
-    printf("Test 3: %d\n", memcmp(test1, test4, 4));
-    printf("Test 4: %d\n", memcmp(test4, test5, 4));
-
-    return 0;
-}
-*/

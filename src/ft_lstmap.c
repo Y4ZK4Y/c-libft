@@ -3,7 +3,7 @@
 /*                                                        ::::::::            */
 /*   ft_lstmap.c                                        :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ykarimi <marvin@42.fr>                       +#+                     */
+/*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/03 12:28:28 by ykarimi       #+#    #+#                 */
 /*   Updated: 2023/11/06 08:41:16 by ykarimi       ########   odam.nl         */
@@ -29,6 +29,7 @@
 ** the function ’f’. 
 ** The ’del’ function is used to delete the content of a node if needed.
 */
+
 #include "libft.h"
 
 t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
@@ -36,7 +37,7 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	t_list	*new_list;
 	t_list	*ptr;
 
-	if (!lst || !f)
+	if (!lst || !f || !del)
 		return (NULL);
 	new_list = ft_lstnew(f(lst->content));
 	if (!new_list)

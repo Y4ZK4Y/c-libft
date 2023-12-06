@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_lstdelone.c                                     :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ykarimi <marvin@42.fr>                       +#+                     */
+/*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/03 12:27:44 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/11/03 19:51:22 by ykarimi       ########   odam.nl         */
+/*   Updated: 2023/12/05 16:13:28 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,12 +25,14 @@
 ** the node’s content using the function ’del’ given as a parameter 
 ** and free the node. The memory of ’next’ must not be freed.
 */
+
 #include "libft.h"
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (!lst || !del)
+	if (!lst)
 		return ;
-	del(lst->content);
+	if (lst->content != 0 && del != 0)
+		(*del)(lst->content);
 	free(lst);
 }
