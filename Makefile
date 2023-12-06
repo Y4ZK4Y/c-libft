@@ -35,7 +35,10 @@ SRCS = ft_toupper.c \
 				ft_bzero.c \
 				ft_atoi.c \
 				ft_strncmp.c \
-				ft_memcmp.c
+				ft_memcmp.c \
+				ft_isspace.c \
+				ft_islower.c \
+				ft_isupper.c
 
 BONUS_SRCS = ft_lstnew.c \
 					ft_lstadd_front.c \
