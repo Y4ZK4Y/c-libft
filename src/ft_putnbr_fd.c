@@ -6,7 +6,7 @@
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:33:35 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/12/05 15:28:45 by yasamankari   ########   odam.nl         */
+/*   Updated: 2024/01/05 18:25:42 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,7 @@
 static void	write_number(unsigned int n, int fd)
 {
 	char	c;
+
 	if (n != 0)
 	{
 		c = n % 10 + '0';

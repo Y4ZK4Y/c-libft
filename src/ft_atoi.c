@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
@@ -7,7 +6,7 @@
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/19 15:49:13 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/11/03 19:52:20 by ykarimi       ########   odam.nl         */
+/*   Updated: 2024/01/05 18:32:42 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,7 +35,6 @@ int	ft_atoi(const char *str)
 		is_negative = (*str == '-');
 		str++;
 	}
-	// computing n as negative to avoid overflow
 	while (*str && ft_isdigit(*str))
 	{
 		n = (n * 10) - (*str - '0');

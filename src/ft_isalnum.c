@@ -3,10 +3,10 @@
 /*                                                        ::::::::            */
 /*   ft_isalnum.c                                       :+:    :+:            */
 /*                                                     +:+                    */
-/*   By: ykarimi <ykarimi@student.codam.nl>                       +#+         */
+/*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/19 16:10:43 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/11/03 19:54:22 by ykarimi       ########   odam.nl         */
+/*   Updated: 2024/01/05 18:21:22 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 

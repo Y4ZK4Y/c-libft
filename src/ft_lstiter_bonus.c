@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
-/*   ft_lstiter.c                                       :+:    :+:            */
+/*   ft_lstiter_bonus.c                                 :+:    :+:            */
 /*                                                     +:+                    */
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/11/03 12:28:16 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/11/03 19:40:50 by ykarimi       ########   odam.nl         */
+/*   Updated: 2024/01/05 17:44:33 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,8 +29,8 @@
 void	ft_lstiter(t_list *lst, void (*f)(void *))
 {
 	if (!lst || !f)
-		return (NULL);
-	while (lst != NULL)
+		return ;
+	while (lst != NULL && f != NULL)
 	{
 		(*f)(lst->content);
 		lst = lst->next;

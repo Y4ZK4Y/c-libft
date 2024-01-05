@@ -6,7 +6,7 @@
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:38:12 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/12/05 13:09:06 by yasamankari   ########   odam.nl         */
+/*   Updated: 2024/01/05 20:39:48 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@
 
 void	*ft_memmove(void *dst, const void *src, size_t len)
 {
-	if (!dst && !src)
+	if (!src && len > 0)
 		return (NULL);
 	if (dst == src)
 		return (dst);
@@ -36,7 +36,6 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 		{
 			len--;
 			((unsigned char *)dst)[len] = ((const unsigned char *)src)[len];
-			
 		}
 	}
 	else

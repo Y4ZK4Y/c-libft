@@ -6,7 +6,7 @@
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:27:02 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/12/05 15:18:57 by yasamankari   ########   odam.nl         */
+/*   Updated: 2024/01/05 18:22:41 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,8 +28,8 @@
 void	ft_putendl_fd(char *s, int fd)
 {
 	size_t	i;
-	i = 0;
 
+	i = 0;
 	if (s == 0)
 		return ;
 	while (s[i] != 0)

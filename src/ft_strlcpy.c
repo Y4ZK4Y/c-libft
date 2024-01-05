@@ -6,7 +6,7 @@
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:11:04 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/12/05 14:47:23 by yasamankari   ########   odam.nl         */
+/*   Updated: 2024/01/05 18:24:57 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,8 +25,8 @@
 size_t	ft_strlcpy(char *dst, const char *src, size_t size)
 {
 	size_t	i;
-	i = 0;
 
+	i = 0;
 	if (size != 0 && dst != src)
 	{
 		while (i < size - 1 && src[i] != 0)

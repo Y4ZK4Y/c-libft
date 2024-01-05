@@ -6,7 +6,7 @@
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:36:36 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/12/05 12:46:06 by yasamankari   ########   odam.nl         */
+/*   Updated: 2024/01/05 18:27:33 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,7 @@
 void	*ft_memset(void *buffer, int value, size_t len)
 {
 	unsigned char	*buffer_ptr;
+
 	buffer_ptr = buffer;
 	while (len > 0)
 	{

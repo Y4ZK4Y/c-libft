@@ -1,4 +1,3 @@
-
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        ::::::::            */
@@ -7,7 +6,7 @@
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:02:36 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/11/03 19:49:24 by ykarimi       ########   odam.nl         */
+/*   Updated: 2024/01/05 18:29:51 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,9 +29,8 @@ int	ft_strncmp(const char *s1, const char *s2, size_t n)
 	const unsigned char	*s1p;
 	const unsigned char	*s2p;
 
-	s1p = (const unsigned char	*)s1;
-	s2p = (const unsigned char	*)s2;
-
+	s1p = (const unsigned char *)s1;
+	s2p = (const unsigned char *)s2;
 	if (s1p == 0 && s2p == 0)
 		return (0);
 	while (n > 0 && *s1p && *s2p && (*s1p == *s2p))

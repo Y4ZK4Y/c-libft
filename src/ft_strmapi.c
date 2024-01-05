@@ -6,7 +6,7 @@
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:05:42 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/12/05 15:37:35 by yasamankari   ########   odam.nl         */
+/*   Updated: 2024/01/05 18:23:36 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,7 +39,6 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 		return (0);
 	s_len = ft_strlen(s);
 	i = 0;
-
 	result = (char *)malloc(sizeof(char) * (s_len + 1));
 	if (result == NULL)
 		return (NULL);

@@ -6,7 +6,7 @@
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/19 16:15:42 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/12/05 16:03:44 by yasamankari   ########   odam.nl         */
+/*   Updated: 2024/01/05 18:34:55 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@
 static int	get_length(int nb)
 {
 	size_t	count;
-	count = 0;
 
+	count = 0;
 	if (nb == 0)
 		return (1);
 	if (nb < 0)
@@ -50,12 +50,12 @@ char	*ft_itoa(int n)
 	char			*result;
 	size_t			length;
 	unsigned int	num;
-	int				is_negative;
-	length = get_length(n);
 
+	length = get_length(n);
 	result = (char *)malloc(sizeof(char) * (length + 1));
 	if (!result)
 		return (NULL);
+	result[length] = '\0';
 	if (n < 0)
 	{
 		result[0] = '-';
@@ -67,7 +67,7 @@ char	*ft_itoa(int n)
 	{
 		if (result[length - 1] == '-')
 			break ;
-		result[length - 1] =(char)(num % 10 + '0');
+		result[length - 1] = (char)(num % 10 + '0');
 		num /= 10;
 		length--;
 	}

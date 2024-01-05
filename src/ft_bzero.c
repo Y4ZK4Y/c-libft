@@ -6,7 +6,7 @@
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/19 16:06:18 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/12/05 12:30:26 by yasamankari   ########   odam.nl         */
+/*   Updated: 2024/01/05 18:21:09 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,5 @@
 
 void	ft_bzero(void *s, size_t n)
 {
-	if (s == NULL)
-		return (NULL);
 	ft_memset(s, 0, n);
 }

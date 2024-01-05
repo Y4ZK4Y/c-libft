@@ -6,7 +6,7 @@
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:22:02 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/12/05 14:24:30 by yasamankari   ########   odam.nl         */
+/*   Updated: 2024/01/05 18:26:08 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,9 @@ char	*ft_strchr(const char *s, int c)
 {
 	char			*string;
 	unsigned char	value;
+
 	string = (char *)s;
 	value = c;
-
 	while (*string != value && *string != '\0')
 		string++;
 	if (*string == value)

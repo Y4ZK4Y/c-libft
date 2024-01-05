@@ -6,7 +6,7 @@
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 10:57:15 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/12/05 14:36:09 by yasamankari   ########   odam.nl         */
+/*   Updated: 2024/01/05 20:42:31 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,20 +29,18 @@ char	*ft_strrchr(const char *s, int c)
 	char	ch;
 	size_t	i;
 
+	if (s == NULL)
+		return (NULL);
 	ch = (char)c;
-	ptr = (char *)s;
+	ptr = NULL;
 	i = 0;
-
-	if (ch == '\0')
-		return (ft_strchr(s, '\0'));
-
 	while (s[i] != '\0')
 	{
 		if (s[i] == ch)
-			ptr = s + i;
-		i++; 
+			ptr = (char *)s + i;
+		i++;
 	}
-	if (*ptr == ch)
-		return (ptr);
-	return (NULL);
+	if (ch == '\0')
+		return ((char *)s + i);
+	return (ptr);
 }

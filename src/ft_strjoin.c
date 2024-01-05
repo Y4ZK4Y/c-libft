@@ -6,7 +6,7 @@
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:14:54 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/12/05 15:50:15 by yasamankari   ########   odam.nl         */
+/*   Updated: 2024/01/05 20:45:38 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,7 +41,7 @@ char	*ft_strjoin(const char *s1, const char *s2)
 	result = (char *)malloc(sizeof(char) * (total_len + 1));
 	if (!result)
 		return (NULL);
-	ft_strlcat(result, s1, total_len + 1);
+	ft_strlcpy(result, s1, total_len + 1);
 	ft_strlcat(result, s2, total_len + 1);
 	return (result);
 }

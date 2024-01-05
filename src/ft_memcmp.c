@@ -6,7 +6,7 @@
 /*   By: ykarimi <ykarimi@student.codam.nl>           +#+                     */
 /*                                                   +#+                      */
 /*   Created: 2023/10/20 11:41:58 by ykarimi       #+#    #+#                 */
-/*   Updated: 2023/11/03 19:50:53 by ykarimi       ########   odam.nl         */
+/*   Updated: 2024/01/05 18:25:19 by yasamankari   ########   odam.nl         */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,9 +31,9 @@ int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const unsigned char	*s1p;
 	const unsigned char	*s2p;
+
 	s1p = (const unsigned char *)s1;
 	s2p = (const unsigned char *)s2;
-
 	while (n > 0)
 	{
 		if (*s1p != *s2p)
